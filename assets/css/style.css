@@ -22,14 +22,14 @@ body{
 }
 
 .brand {
-  color:#FFA200;
+  color:#9388FA;
   text-align: center;
   padding-top: 30vh;
   font-size: 450%;
 }
 
 h1{
-  color:#FFA200;
+  color:#9388FA;
   text-align: center;
   font-size: 6rem;
   font-weight: 100;
@@ -54,7 +54,7 @@ hr {
 .pide {
   padding-top: 35px;
   font-size: 3rem;
-  color:#FFA200;
+  color:#9388FA;
   text-align: center;
   font-weight: 200;
 }
