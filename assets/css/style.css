@@ -1,4 +1,7 @@
-* {
+/*
+*Estilos generales
+*/
+* { 
   margin:0;
   padding:0;
   font-family: Roboto;
@@ -9,6 +12,9 @@ body{
   color:#fff;
 }
 
+/*
+*Icono loader
+*/
 .loader{
   background-color: #444444;
   position: fixed;
@@ -21,6 +27,14 @@ body{
   text-align: center;
 }
 
+.fa-spinner{
+  font-size: 5rem;
+  text-align: center;
+}
+
+/*
+*Marca
+*/
 .brand {
   color:#9388FA;
   text-align: center;
@@ -39,6 +53,9 @@ hr {
   border: 1px solid;
 }
 
+/*
+*Mapa
+*/
 .location{
   width:100%;
   height: 50vw;
@@ -46,11 +63,9 @@ hr {
 
 }
 
-.fa-spinner{
-  font-size: 5rem;
-  text-align: center;
-}
-
+/*
+*p antes del filtro
+*/
 .pide {
   padding-top: 35px;
   font-size: 3rem;
@@ -59,22 +74,24 @@ hr {
   font-weight: 200;
 }
 
-/*Estilos Search-bar*/
+/*
+*Estilos Search-bar
+*/
 .look {
   padding-bottom: 2%;
 }
-#choice {
+.choice {
   border: solid 1px #E4E4E4;
   border-radius: 6px;
   background-color: #fff;
 }
 
-#choice input{
+.choice input{
   border: 0;
   box-shadow: none;
 }
 
-#choice button{
+.choice button{
   margin: 2px 0 0 35px;
   background: none;
   box-shadow: none;
@@ -85,13 +102,13 @@ hr {
   display: inline-block;
 }
 
-#choice button:hover{
+.choice button:hover{
   border: 0;
   box-shadow: none;
   border-left: solid 1px #181717;
 }
 
-#choice .glyphicon-search{
+.choice .glyphicon-search{
   font-size: 23px;
 }
 

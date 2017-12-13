@@ -32,25 +32,30 @@
 			</div>
 		</div>
 	</div>
-	<div class="container look">
+	<!-- Menú -->
+	<div class="container filter">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<div id="choice">
+				<div id="custom-search-input">
 					<div class="input-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<select id="choice_rest" class="form-control input-lg">
-							<option value="" disabled selected>Buscar tipo de comida colombiana</option>
-							<option value="pasabocas">Pasabocas</option>
-							<option value="fast_food">Fast Food</option>
-							<option value="gourmet">Comida gourmet</option>
-							<option value="exotica">Comida exótica</option>
-							<option value="postres">Postres</option>
-						</select>
-							
-					</div>
+						<select id="choices" class="form-control input-lg" />
+						<option value="" disabled selected>Escoger tipo de comida</option>
+						<option value="pasa" id="pasab">Pasaboca</option>
+						<option value="ffoody">Fast Food</option>
+						<option value="gourmet">Comida gourmet</option>
+						<option value="exot">Comida exótica</option>
+						<option value="postre">Postres</option>
+					</select>
+					<span class="input-group-btn">
+						<button class="btn btn-default btn-lg" type="button">
+							<i class="fa fa-search"></i>
+						</button>
+					</span>
 				</div>
 			</div>
 		</div>
 	</div>
+		<!-- Contenedor imagenes general -->
 	<div class="container-fluid hmmpics">
 		<div class="row">
 				<div class="col-xs-6" id="col1"><img  class="delipics" src="assets/img/colombia.jpg" alt="pasabocas"></div>
@@ -63,94 +68,40 @@
 		</div>
 	</div>
 	<!-- filtro pasabocas -->
-	<div class="pasabocas">
-		<div class="row img_pasab">
-			<div class="col-xs-4 col-sm-4 pasabocas">
-				<a href="#" class="thumbnail">
-					<div data-toggle="modal" data-target="#myModal" id="overlay">
-						<p>Pa`picar</p>
-								</div>
-						<img  src="assets/img/Gustapan-2.jpg" alt="Panaderia Gustapan">
-				</a>
-			</div>
-			<div class="col-xs-4 col-sm-4 pasabocas2">
-				<a href="#" class="thumbnail ">
-					<div data-toggle="modal" data-target="#myModal2" id="overlay2">
-						<p>Fritos y más...</p>
-					</div>
-						<img src="assets/img/caribe.jpg" alt="Panaderia Caribe">
-				</a>
+	<div class="container-fluid filtrado" id="pasabocas">
+		<div class="row">
+			<div class="col-xs-6 uno"><a data-target="#modalgustp" data-toggle="modal"><img id="gpan" class="img_gustap" src="assets/img/Gustapan-2.jpg" alt="Gustapan"></a></div>
+			<div class="col-xs-6 dos"><a data-target="#modalcaribe" data-toggle="modal"><img id="pcaribe" class="img_caribe" src="assets/img/caribe.jpg" alt="Panaderia Caribe"></a>
 			</div>
 		</div>
 	</div>
 <!-- filtro fast food -->
-	<div class="ffood">
-		<div class="row img_ffood">
-			<div class="col-xs-4 col-sm-4 ffood2">
-				<a href="#" class="thumbnail">
-					<div data-toggle="modal" data-target="#myModal" id="overlay">
-						<p>Hamburguesas</p>
-								</div>
-						<img  src="assets/img/corral.jpg" alt="Hamburguesas El Corral">
-				</a>
-			</div>
-			<div class="col-xs-4 col-sm-4 ffood2">
-				<a href="#" class="thumbnail ">
-					<div data-toggle="modal" data-target="#myModal2" id="overlay2">
-						<p>Arepasy más...</p>
-					</div>
-						<img src="assets/img/amandas.jpg" alt="Arepas Amanda's">
-				</a>
-			</div>
+	<div class="container-fluid filtrado" id="ffood">
+		<div class="row">
+			<div class="col-xs-6 uno"><a data-target="#modalelcorral" data-toggle="modal"><img class="img_corral" src="assets/img/corral.jpg" alt="El Corral"></a></div>
+			<div class="col-xs-6 dos"><a data-target="#modalamanda" data-toggle="modal"><img class="img_amanda" src="assets/img/amandas.jpg" alt="Amanda´s"></a></div>
 		</div>
 	</div>
 	<!-- filtro gourmet -->
-	<div class="gourmet">
-		<div class="row img_gourmet">
-			<div class="col-xs-4 col-sm-4 gourmet2">
-				<a href="#" class="thumbnail">
-					<div data-toggle="modal" data-target="#myModal" id="overlay">
-						<p>Sabores inolvidables</p>
-								</div>
-						<img  src="assets/img/maderaycarbon.jpg" alt="Madera y Carbon">
-				</a>
-			</div>
-			<div class="col-xs-4 col-sm-4 gourmet2">
-				<a href="#" class="thumbnail ">
-					<div data-toggle="modal" data-target="#myModal2" id="overlay2">
-						<p>Antojos que valen la pena</p>
-					</div>
-						<img src="assets/img/arrieros.jpg" alt="Arrieros colombianos">
-				</a>
-			</div>
+	<div class="container-fluid filtrado" id="gour">
+		<div class="row">
+			<div class="col-xs-6 uno"><a data-target="#modalarrieros" data-toggle="modal"><img class="img_arrieros" src="assets/img/arrieros.jpg" alt="Arrieros colombianos"></a></div>
+			<div class="col-xs-6 dos"><a data-target="#modalmaderacarbon" data-toggle="modal"><img class="img_madera" src="assets/img/madera.jpg" alt="Madera y Carbón"></a></div>
 		</div>
 	</div>
 	<!-- filtro exótica -->
-	<div class="exotica">
-		<div class="row img_exotica">
-			<div class="col-xs-4 col-sm-4 exotica2">
-				<a href="#" class="thumbnail">
-					<div data-toggle="modal" data-target="#myModal" id="overlay">
-						<p>Te atreves?...!Prueba!</p>
-								</div>
-						<img  src="assets/img/colombia4.jpg" alt="Hormigas Culonas">
-				</a>
-			</div>
+	<div class="container-fluid filtrado" id="exo">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 uno"><a data-target="#modalhormiga" data-toggle="modal"><img class="img_hormiga" src="assets/img/colombia4.jpg" alt="Hormigas culonas"></a></div>
 		</div>
 	</div>
 	<!-- filtro postres-->
-	<div class="postres">
-		<div class="row img_postres">
-			<div class="col-xs-4 col-sm-4 postres2">
-				<a href="#" class="thumbnail">
-					<div data-toggle="modal" data-target="#myModal" id="overlay">
-						<p>Del paraíso de la fruta...!Prueba!</p>
-								</div>
-						<img  src="assets/img/fruta.jpeg" alt="Frutas">
-				</a>
-			</div>
+	<div class="container-fluid filtrado" id="post">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 uno"><a data-target="#modalfruta" data-toggle="modal"><img class="img_postre" src="assets/img/fruta.jpg" alt="Frutas"></a></div>
 		</div>
 	</div>
+
 	<script src="assets/js/app.js"></script>
 </body>
 </html>
