@@ -75,13 +75,14 @@ hr {
 }
 
 #choice button{
-  margin: 2px 0 0 0;
+  margin: 2px 0 0 35px;
   background: none;
   box-shadow: none;
   border: 0;
   color: #2B2B2B;
   padding: 0 8px 0 10px;
   border-left: solid 1px #ccc;
+  display: inline-block;
 }
 
 #choice button:hover{
@@ -133,6 +134,12 @@ hr {
   padding-bottom: 5%;
 }
 
+/*Estilos icono lupa Search-bar*/
 .fa.lup {
-  margin-left: 160px;
+  margin-left: -370px;  
 }
+
+/*Estilos placeholder Search-bar*/
+button #dropDownMenu1{
+  margin-left: 20px;
+  }
