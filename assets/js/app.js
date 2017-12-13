@@ -17,11 +17,13 @@ setTimeout(function(){
 */
 
 /*
-* clasificacion
+* Selección por filtros
 */
 	$('.hmmpics').show();
 	$('.pasabocas').hide();
 	$('.ffood').hide();
-	$('.mexicanas').hide();
+	$('.gourmet').hide();
+	$('.exotica').hide();
+	$('.postres').hide();
 
 });
