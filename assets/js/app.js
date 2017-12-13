@@ -16,34 +16,12 @@ setTimeout(function(){
 *Filtro de búsqueda
 */
 
-	$("#pasabocas").show();
-	$("#ffood").hide();
-	$("#gourmet").hide();
-	$("#exotica").hide();
-	$("#postres").hide();
-
-	$("#chile").click(function(){
-		$(".chilena").show();
-		$("#varias").hide();
-		$(".colombianas").hide();
-		$(".mexicanas").hide();
-	
-	})
-
-	$("#colombia").click(function(){
-		$(".chilena").hide();
-		$("#varias").hide();
-		$(".colombianas").show();
-		$(".mexicanas").hide();
-	
-	})
-
-	$("#mexico").click(function(){
-		$(".chilena").hide();
-		$("#varias").hide();
-		$(".colombianas").hide();
-		$(".mexicanas").show();
-	
-	})
+/*
+* clasificacion
+*/
+	$('.hmmpics').show();
+	$('.pasabocas').hide();
+	$('.colombianas').hide();
+	$('.mexicanas').hide();
 
 });
