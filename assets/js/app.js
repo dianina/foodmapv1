@@ -21,7 +21,7 @@ setTimeout(function(){
 */
 	$('.hmmpics').show();
 	$('.pasabocas').hide();
-	$('.colombianas').hide();
+	$('.ffood').hide();
 	$('.mexicanas').hide();
 
 });

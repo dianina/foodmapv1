@@ -1,89 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>Foodmap</title>
-  <script src="assets/js/jquery-3.2.1.min.js"></script>
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <script src="https://use.fontawesome.com/f1462b63cd.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Foodmap</title>
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<script src="https://use.fontawesome.com/f1462b63cd.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="loader">
-          <h1 class="brand">Foodmap</h1>
-          <br>
-          <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h1 class="initial">Foodmap</h1>
-          <hr>
-        <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.4523202695004!2d-70.65741848520848!3d-33.43752030423406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a511a81311%3A0xb6161672d6c5ccaa!2sCatedral+1289%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1513126535517" allowfullscreen></iframe>
-        <p class="pide">Comida cerca de ti...</p>
-      </div>
-    </div>
-  </div>
-  <div class="container look">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div id="choice">
-          <div class="input-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <select id="choice_rest" class="form-control input-lg">
-              <option value="" disabled selected>Buscar tipo de comida colombiana</option>
-              <option value="pasabocas">Pasabocas</option>
-              <option value="fast_food">Fast Food</option>
-              <option value="gourmet">Comida gourmet</option>
-              <option value="exotica">Comida exótica</option>
-              <option value="postres">Postres</option>
-            </select>
-              
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid hmmpics">
-    <div class="row">
-        <div class="col-xs-6" id="col1"><img  class="delipics" src="assets/img/colombia.jpg" alt="pasabocas"></div>
-        <div class="col-xs-6" id="col2"><img class="delipics" src="assets/img/colombia2.jpg" alt="fast_food"></div>
-    </div>
-    <div class="row">
-        <div class="col-xs-4" id="col3"><img class="delipics" src="assets/img/colombia3.jpg" alt="gourmet"></div>
-        <div class="col-xs-4" id="col4"><img class="delipics" src="assets/img/colombia4.jpg" alt="exoticos"></div>
-        <div class="col-xs-4" id="col5"><img class="delipics" src="assets/img/colombia5.jpg" alt="postres"></div>
-    </div>
-  </div>
-  <!-- filtro pasabocas -->
-          <div class="pasabocas">
-            <div class="row img_pasab">
-              <div class="col-xs-4 col-sm-4 pasabocas">
-                <a href="#" class="thumbnail">
-                  <div data-toggle="modal" data-target="#myModal" id="overlay">
-                  <p>Pa`picar</p>
-                </div>
-                  <img  src="assets/img/Gustapan-2.jpg" alt="">
-                </a>
-              </div>
-              <div class="col-xs-4 col-sm-4 pasabocas2">
-                <a href="#" class="thumbnail ">
-                  <div data-toggle="modal" data-target="#myModal2" id="overlay2">
-                  <p>Fritos y más...</p>
-                  </div>
-                  <img src="assets/img/caribe.jpg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="loader">
+					<h1 class="brand">Foodmap</h1>
+					<br>
+					<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h1 class="initial">Foodmap</h1>
+					<hr>
+				<iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.4523202695004!2d-70.65741848520848!3d-33.43752030423406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a511a81311%3A0xb6161672d6c5ccaa!2sCatedral+1289%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1513126535517" allowfullscreen></iframe>
+				<p class="pide">Comida cerca de ti...</p>
+			</div>
+		</div>
+	</div>
+	<div class="container look">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div id="choice">
+					<div class="input-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<select id="choice_rest" class="form-control input-lg">
+							<option value="" disabled selected>Buscar tipo de comida colombiana</option>
+							<option value="pasabocas">Pasabocas</option>
+							<option value="fast_food">Fast Food</option>
+							<option value="gourmet">Comida gourmet</option>
+							<option value="exotica">Comida exótica</option>
+							<option value="postres">Postres</option>
+						</select>
+							
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid hmmpics">
+		<div class="row">
+				<div class="col-xs-6" id="col1"><img  class="delipics" src="assets/img/colombia.jpg" alt="pasabocas"></div>
+				<div class="col-xs-6" id="col2"><img class="delipics" src="assets/img/colombia2.jpg" alt="fast_food"></div>
+		</div>
+		<div class="row">
+				<div class="col-xs-4" id="col3"><img class="delipics" src="assets/img/colombia3.jpg" alt="gourmet"></div>
+				<div class="col-xs-4" id="col4"><img class="delipics" src="assets/img/colombia4.jpg" alt="exoticos"></div>
+				<div class="col-xs-4" id="col5"><img class="delipics" src="assets/img/colombia5.jpg" alt="postres"></div>
+		</div>
+	</div>
+	<!-- filtro pasabocas -->
+	<div class="pasabocas">
+		<div class="row img_pasab">
+			<div class="col-xs-4 col-sm-4 pasabocas">
+				<a href="#" class="thumbnail">
+					<div data-toggle="modal" data-target="#myModal" id="overlay">
+						<p>Pa`picar</p>
+								</div>
+						<img  src="assets/img/Gustapan-2.jpg" alt="">
+				</a>
+			</div>
+			<div class="col-xs-4 col-sm-4 pasabocas2">
+				<a href="#" class="thumbnail ">
+					<div data-toggle="modal" data-target="#myModal2" id="overlay2">
+						<p>Fritos y más...</p>
+					</div>
+						<img src="assets/img/caribe.jpg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
 <!-- filtro fast food -->
-  <script src="assets/js/app.js"></script>
+	<div class="ffood">
+		<div class="row img_ffood">
+			<div class="col-xs-4 col-sm-4 ffood2">
+				<a href="#" class="thumbnail">
+					<div data-toggle="modal" data-target="#myModal" id="overlay">
+						<p>Hamburguesas</p>
+								</div>
+						<img  src="assets/img/corral.jpg" alt="">
+				</a>
+			</div>
+			<div class="col-xs-4 col-sm-4 ffood2">
+				<a href="#" class="thumbnail ">
+					<div data-toggle="modal" data-target="#myModal2" id="overlay2">
+						<p>Arepasy más...</p>
+					</div>
+						<img src="assets/img/amandas.jpg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/js/app.js"></script>
 </body>
 </html>
