@@ -152,7 +152,7 @@ hr {
 }
 
 /*
-*Estilos img filtradas
+*Estilos img filtradas por id
 */
 #pasabocas {
   padding: 25px;
@@ -174,4 +174,22 @@ hr {
 #post {
   padding: 25px 5px 5px 25px;
   margin: 10px -1px 10px -25px;
+}
+
+/*
+*Estilos particulares img filtradas
+*/
+
+.uno {
+  padding-bottom: 30px;
+  justify-content: center;
+  background-position: center;
+  display: block;
+}
+
+.dos {
+  padding-bottom: 30px;
+  justify-content: center;
+  background-position: center;
+  display: block;
 }
