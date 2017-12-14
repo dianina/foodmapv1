@@ -112,9 +112,9 @@ hr {
   font-size: 23px;
 }
 
-.input-lg{
-  height: 35px;
-}
+/*
+*Galería imágenes general
+*/
 .delipics{
   width:100%;
   padding-top:6%;
@@ -151,12 +151,27 @@ hr {
   padding-bottom: 5%;
 }
 
-/*Estilos icono lupa Search-bar*/
-.fa.lup {
-  margin-left: -370px;  
+/*
+*Estilos img filtradas
+*/
+#pasabocas {
+  padding: 25px;
 }
 
-/*Estilos placeholder Search-bar*/
-button #dropDownMenu1{
-  margin-left: 20px;
-  }
+#ffood {
+  padding: 25px;
+}
+
+#gour {
+  padding: 25px;
+}
+
+#exo {
+  padding: 25px 5px 5px 25px;
+  margin: 10px -1px 10px -25px;
+}
+
+#post {
+  padding: 25px 5px 5px 25px;
+  margin: 10px -1px 10px -25px;
+}
