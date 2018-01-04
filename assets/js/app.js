@@ -14,7 +14,8 @@ setTimeout(function(){
     }, 2000);
 
 /**
-*función que muestra y oculta las imagenes segun el filtro
+*función que muestra y oculta las 
+imagenes segun el filtro
 */
 
 $(function() {
